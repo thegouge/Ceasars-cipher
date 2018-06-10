@@ -1,6 +1,6 @@
 // Instructions Go Here
 
-export function caesarCipher(str) {
+export function rot13(str) {
   // Code Goes Here
 }
 
