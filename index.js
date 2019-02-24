@@ -1,7 +1,7 @@
 // Instructions Go Here
 
 export function rot13(str) {
-  const orig = str.split("");
+  const orig = str.toUpperCase().split("");
 
   let rot = orig.map((char) => {
     let code = char.charCodeAt();
@@ -24,5 +24,5 @@ const output = document.getElementById("output");
 const submit = document.getElementById("submit");
 
 submit.addEventListener("click", () => {
-
+  output.innerHTML = `"${input.value}" === ${rot13(input.value)}`;
 });

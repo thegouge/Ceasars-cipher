@@ -1,6 +1,4 @@
-import {
-  rot13
-} from "./index.js";
+import {rot13} from "./index.js";
 
 let output;
 
@@ -11,7 +9,7 @@ beforeEach(() => {
 describe("Caesar's Cipher", () => {
   it("Should return a String", () => {
     output = rot13("A");
-    expect(typeof output).toBe("String");
+    expect(typeof output).toBe("string");
   });
 
   it("Should shift letters 13 places", () => {
